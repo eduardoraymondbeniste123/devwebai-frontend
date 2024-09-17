@@ -1,0 +1,169 @@
+2. Crie o Diretório do Projeto
+
+Abra o terminal no Visual Studio Code (Ctrl + `) e navegue até o diretório onde deseja criar o projeto:
+
+cd "F:\DakicodeMapaDeEstudo\Empresa EduardoRaymondAgenciaWebAi\AnalistaEdesenvolvedorDeSistemaWeb\Lógica de Programaçã\ProjetoJavaIniciante\com\devwebai\dudu"
+
+Crie o diretório do projeto e entre nele:
+
+mkdir ProjetoJavaIniciante
+cd ProjetoJavaIniciante
+
+3. Inicialize um Repositório Git
+
+git init
+
+Crie um Projeto Java Simples
+
+Crie a estrutura de pastas para o seu projeto Java:
+
+1. Criar a Estrutura de Diretórios
+
+Abra o terminal no Visual Studio Code e execute o seguinte comando para criar a estrutura de diretórios:
+
+mkdir -p src\com\devwebai\dudu
+
+2. Criar o Arquivo Java Principal
+
+Depois de criar os diretórios, crie um arquivo Java principal dentro do pacote com.devwebai.dudu:
+
+Aqui está um passo a passo detalhado para criar, configurar e enviar o seu projeto Java para o GitHub a partir do Windows 11 usando o Visual Studio Code. Vamos começar do zero:
+
+1. Criar a Estrutura do Projeto
+Vamos criar a estrutura de diretórios e o arquivo Main.java conforme solicitado.
+
+1.1. Abra o Visual Studio Code
+Abra o Visual Studio Code.
+Abra o terminal integrado (`Ctrl + ``).
+1.2. Navegar até o Diretório Desejado
+Navegue até o local onde você deseja criar o projeto.
+
+cd "F:\DakicodeMapaDeEstudo\Empresa EduardoRaymondAgenciaWebAi\AnalistaEdesenvolvedorDeSistemaWeb\Lógica de Programaçã\ProjetoJavaIniciante\ProjetoJavaIniciante\ProjetoJavaIniciante\src\com\devwebai\dudu"
+
+1.3. Criar a Estrutura de Diretórios
+Crie a pasta do projeto e a estrutura de pacotes:
+
+mkdir -p ProjetoJavaIniciante\src\com\devwebai\dudu
+cd ProjetoJavaIniciante
+
+2. Criar o Arquivo Main.java
+Agora, vamos criar o arquivo Main.java com o código fornecido:
+
+2.1. Criar o Arquivo
+Use o seguinte comando para criar o arquivo:
+
+
+type nul > src\com\devwebai\dudu\Main.java
+
+2.2. Abrir e Editar o Arquivo
+Abra o arquivo Main.java no Visual Studio Code e insira o código:package com.devwebai.dudu;
+
+public class Main {
+
+    public int[] numeros = { 10, 20 };
+
+    public Main() {
+        int soma = 0;
+        // Corrigido o loop para usar < em vez de <=
+        for (int i = 0; i < numeros.length; i++) {
+            soma += numeros[i];
+        }
+        System.out.println("A soma dos números é: " + soma);
+    }
+
+    public static void main(String[] args) {
+        new Main();
+    }
+}
+
+
+
+3. Inicializar o Repositório Git
+Agora, vamos inicializar o Git e fazer o primeiro commit.
+
+3.1. Inicializar o Repositório
+No terminal do Visual Studio Code, inicialize o repositório Git:
+
+git init
+
+3.2. Adicionar os Arquivos
+Adicione todos os arquivos ao repositório:
+
+git add .
+
+3.3. Fazer o Primeiro Commit
+Faça o primeiro commit:
+
+git commit -m "Primeiro commit - Adicionando o arquivo Main.java"
+
+4. Criar o Repositório no GitHub
+4.1. Acessar o GitHub
+Vá para GitHub e faça login na sua conta.
+4.2. Criar um Novo Repositório
+Crie um novo repositório com o nome ProjetoJavaIniciante.
+Não adicione um README, .gitignore, ou licença.
+5. Conectar o Repositório Local ao Repositório Remoto
+5.1. Adicionar o Repositório Remoto
+Copie o URL do repositório que você acabou de criar no GitHub e adicione-o como remoto:
+
+
+git remote add origin https://github.com/eduardoraymondbeniste123/ProjetoJavaIniciante
+
+5.2. Enviar o Código para o GitHub
+Agora, envie o código para o GitHub:
+
+git push -u origin Main
+
+O erro que você está enfrentando ocorre porque o Git não encontrou uma branch chamada Main no repositório local. Isso pode acontecer por alguns motivos, como a branch local ainda não existir, ou você estar tentando enviar para uma branch com o nome errado.
+
+Aqui está como você pode corrigir esse problema:
+
+1. Verificar ou Criar a Branch Correta
+1.1. Verifique se a Branch Principal é main ou master
+Por padrão, o Git geralmente usa main ou master como a branch principal. Você pode verificar a branch atual usando:
+
+git branch
+
+Se você estiver na branch correta (por exemplo, main), não há necessidade de criar uma nova. Caso contrário, você pode criar e mudar para a branch correta.
+1.2. Criar a Branch main Se Necessário
+Se você não tiver uma branch main, crie-a e troque para ela:
+
+.2. Criar a Branch main Se Necessário
+Se você não tiver uma branch main, crie-a e troque para ela:
+
+git checkout -b Main
+
+2. Adicionar, Commitar e Puxar para a Branch Correta
+2.1. Adicionar os Arquivos Novamente
+Adicione os arquivos ao estágio:
+bash
+
+git add .
+
+2.2. Faça o Commit
+Commite as mudanças:
+
+git push -u origin Main
+
+
+4. Verifique o Resultado no GitHub
+Acesse o GitHub e verifique se o arquivo Main.java foi enviado corretamente para a branch main.
+5. Se a Branch do Repositório Remoto for master
+Caso o repositório no GitHub tenha a branch master como principal, você pode alterar o nome da branch local ou enviar diretamente para master:
+
+
+4. Verifique o Resultado no GitHub
+Acesse o GitHub e verifique se o arquivo Main.java foi enviado corretamente para a branch main.
+5. Se a Branch do Repositório Remoto for master
+Caso o repositório no GitHub tenha a branch master como principal, você pode alterar o nome da branch local ou enviar diretamente para master:
+
+Para adicionar e enviar o arquivo ClasseScanner.java ao mesmo repositório no GitHub, dentro do diretório master, siga os passos abaixo:
+
+1. Navegar até o Diretório do Projeto
+Certifique-se de estar no diretório correto do projeto:
+
+cd "F:\DakicodeMapaDeEstudo\Empresa EduardoRaymondAgenciaWebAi\AnalistaEdesenvolvedorDeSistemaWeb\Lógica de Programaçã\ProjetoJavaIniciante\ProjetoJavaIniciante\ProjetoJavaIniciante\src\com\devwebai\dudu"
+
+Prompt para empresa de Desing
+
+Me gera uma logotipo para musica no musel  com um fundo azul de uma orquestra no fundo e um violino da cor branca e un texto azul Musica no musel me ve uma orquestra no fundo e um violino branco Escreve depois do Violino da cor amarelo e preto escreve Musica no Musel em Branco
